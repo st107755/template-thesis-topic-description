@@ -15,7 +15,7 @@
 \usepackage{url}
 \usepackage{paralist}
 \usepackage{lmodern}
-\usepackage{lipsum}
+\usepackage[authoryear]{natbib}
 \usepackage{blindtext}
 \renewcommand\textbullet{\ensuremath{\bullet}}
 
@@ -28,7 +28,7 @@
 \includegraphics[width=6cm]{figures/stuttgart-vector.pdf}\hfill{\includegraphics[width=3cm]{figures/rss_logo.pdf}}
 \quad \\ [0.5cm]
 {\large \textit{Master's Thesis (Master Softwaretechnik):}} \\ [1mm]
-{\Large Thesis Title (first Line) \\ [-3mm] Thesis Title (second Line)}
+{\Large Thesis Title}
 }
 
 \begin{document}
@@ -42,33 +42,38 @@
 
 
 \subsection*{Background and Motivation}
-\blindtext\cite{newman2015}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem. Nullam nec
+mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec ullamcorper, felis non
+sodales commodo, lectus velit ultrices augue, a dignissim nibh lectus placerat pede. \cite{newman2015building} 
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed interdum libero ut metus.
+Pellentesque placerat. Nam rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin.
+Praesent blandit blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
 
 
 \subsection*{Goals}
-\blindtext\cite{bass2015}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem. Nullam nec
+mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec ullamcorper, felis non
+sodales commodo, lectus velit ultrices augue, a dignissim nibh lectus placerat pede. Vivamus nunc
+nunc, molestie ut, ultricies vel, semper in, velit. \cite{bass2015devops} 
+Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
 
 
 \subsection*{Possible Collaborations}
-\blindtext\cite{pitakrat2016}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem. Nullam nec
+mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec ullamcorper, felis non
+sodales commodo, lectus velit ultrices augue, a dignissim nibh lectus placerat pede. Vivamus nunc
+nunc, molestie ut, ultricies vel, semper in, velit. \cite{pitakrat2016archaware}
 
-
-\subsection*{Literature}
-\begingroup
-	\renewcommand{\section}[2]{}% suppress heading
-	\begin{thebibliography}{1}
-		\bibitem{newman2015} Newman, S. Building Microservices. Journal of Systems and Software. O'Reilly Media, Inc., 2015
-        \bibitem{bass2015} Bass, L., Weber, I., and Zhu, L. DevOps: A Software Architect's Perspective. Addison-Wesley Professional, 2015
-        \bibitem{pitakrat2016} Pitakrat, T., Okanovi\'{c}, D., van Hoorn, A., and Grunske,L. An Architecture-aware Approach to Hierarchical Online Failure Prediction. Proceedings of the 12th International ACM SIGSOFT Conference on the Quality of Software Architectures (QoSA '16), 2016
-	\end{thebibliography}
-\endgroup
-
+\begin{scriptsize}
+\bibliographystyle{abbrv}
+\bibliography{bibliography.bib}
+\end{scriptsize}
 
 \subsection*{Contact}
 Dr.-Ing. André van Hoorn, van.hoorn@informatik.uni-stuttgart.de \\
 University of Stuttgart, Inst.\ for Software Technology, Reliable Software Systems Group \\
-
-
 
 \end{document}
 
