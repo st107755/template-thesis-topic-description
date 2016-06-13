@@ -1,0 +1,74 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\pagestyle{empty}
+
+%\usepackage[ngerman]{babel}
+
+\usepackage[utf8]{inputenc}
+\usepackage[top=0.8in, bottom=0.8in, left=0.8in, right=0.8in]{geometry}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{paralist}
+\usepackage{lmodern}
+\usepackage{lipsum}
+\usepackage{blindtext}
+\renewcommand\textbullet{\ensuremath{\bullet}}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\date{}
+
+\title{
+%\vspace*{-2cm} \includegraphics[width=16cm]{header.png}
+\includegraphics[width=6cm]{figures/stuttgart-vector.pdf}\hfill{\includegraphics[width=3cm]{figures/rss_logo.pdf}}
+\quad \\ [0.5cm]
+{\large \textit{Master's Thesis (Master Softwaretechnik):}} \\ [1mm]
+{\Large Thesis Title (first Line) \\ [-3mm] Thesis Title (second Line)}
+}
+
+\begin{document}
+	
+
+\maketitle
+
+\thispagestyle{empty}
+
+\vspace{-2.5cm}
+
+
+\subsection*{Background and Motivation}
+\blindtext\cite{newman2015}
+
+
+\subsection*{Goals}
+\blindtext\cite{bass2015}
+
+
+\subsection*{Possible Collaborations}
+\blindtext\cite{pitakrat2016}
+
+
+\subsection*{Literature}
+\begingroup
+	\renewcommand{\section}[2]{}% suppress heading
+	\begin{thebibliography}{1}
+		\bibitem{newman2015} Newman, S. Building Microservices. Journal of Systems and Software. O'Reilly Media, Inc., 2015
+        \bibitem{bass2015} Bass, L., Weber, I., and Zhu, L. DevOps: A Software Architect's Perspective. Addison-Wesley Professional, 2015
+        \bibitem{pitakrat2016} Pitakrat, T., Okanovi\'{c}, D., van Hoorn, A., and Grunske,L. An Architecture-aware Approach to Hierarchical Online Failure Prediction. Proceedings of the 12th International ACM SIGSOFT Conference on the Quality of Software Architectures (QoSA '16), 2016
+	\end{thebibliography}
+\endgroup
+
+
+\subsection*{Contact}
+Dr.-Ing. André van Hoorn, van.hoorn@informatik.uni-stuttgart.de \\
+University of Stuttgart, Inst.\ for Software Technology, Reliable Software Systems Group \\
+
+
+
+\end{document}
+
