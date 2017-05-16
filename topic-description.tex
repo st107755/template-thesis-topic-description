@@ -28,7 +28,7 @@
 \includegraphics[width=6cm]{figures/stuttgart-vector.pdf}\hfill{\includegraphics[width=3cm]{figures/rss_logo.pdf}}
 \quad \\ [0.5cm]
 {\large \textit{Student Report (Bachelor Softwaretechnik):}} \\ [1mm]
-{\Large Evaluating Open-source tool stacks for Application Performance Diagnostics}
+{\Large Evaluating Open-source Tool Stacks for Application Performance Diagnostics}
 }
 
 \begin{document}
@@ -42,14 +42,14 @@
 
 
 \subsection*{Background and Motivation}
-Big server architectures with distributed instances are very common. To monitor such architectures and alert in case of failure or heave workload, powerful control tools for distributed systems are needed. These tools can be used to detect bottlenecks in systems like RAM, CPU or bandwidth. Some of these tools are very modular. Many tools only serve one purpose and need to connected to other tools to provide all features that are needed(e.g. data collection, data visualisation). On the other hand some systems offer a complete package using the same technology.
-This Student Report aims to evaluate different tools on the market and to compare them to illustrate their features and disadvantages. 
-Not considered are pure APM tools for single server architectures\cite{Heger2017}.
+Big server architectures with distributed instances are very common. To monitor such architectures and trigger alert in case of failure or heave workload, powerful control tools for distributed systems are needed. These tools can be used to detect problems in systems e.g. RAM, CPU or bandwidth and response time. Some of these tools are very modular. While many tools only serve one purpose and need to connect to other tools to provide all features that are needed(e.g., data collection, data visualisation). On the other hand some tools offer a complete package using the same technology.
+This work aims to evaluate different tools on the market and to compare them to illustrate their features and disadvantages. 
+Not considered in this work are pure APM tools for single server architectures \cite{ahmed2016studying} \cite{Heger2017} .
 
 \subsection*{Goals}
-The Student Report lists and discusses different open source monitoring and alerting tools. The goal is to illustrate the different architectures, features, and technologies of the systems to make it easier for the reader to decide which application is the best for the.
-Some of applications that will be compared are InfluxDB\cite{InfluxDB}combined with Kapacitor, Prometheus\cite{Prometheus}  and ELK. As a first step, more tools for distributed server architectures comparison will be added to the list. Required for these tools is, that they are able to monitor Microservices and have options to give out alerts to the users. Furthermore its necessary for the tools is a interactive visualization of the collected data
-Secondly, the features of these tools will be collected and compared. Eventually the evaluated systems will be installed on a server environment to test them in a practicable environment. The different tools on these servers will be deployed with Docker.
+This work lists and discusses different open-source monitoring and alerting tools. The goal is to illustrate the different architectures, features, and technologies of the tools to make it easier for the reader to decide which tool are the best for the reader.
+Some applications that will be compared are InfluxDB \cite{InfluxDB} combined with Kapacitor, Prometheus \cite{Prometheus}  and ELK \cite{ELK} . As a first step, more tools will be added to the list. Required for these tools is, that they are able to monitor microservices and have options to send alerts to the users. Furthermore, an interactive visualization of the collected data is necessary.
+Secondly, the features of these tools will be collected and compared. Eventually the evaluated tools will be deployed and tested in a real environment, using application container technologies i.e., Docker and Rubernetes 
 
 
 \begin{scriptsize}
