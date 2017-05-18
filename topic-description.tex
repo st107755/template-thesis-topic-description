@@ -9,7 +9,7 @@
 %\usepackage[ngerman]{babel}
 
 \usepackage[utf8]{inputenc}
-\usepackage[top=0.8in, bottom=0.8in, left=0.8in, right=0.8in]{geometry}
+\usepackage[top=0.6in, bottom=0.8in, left=0.8in, right=0.8in]{geometry}
 
 \usepackage{graphicx}
 \usepackage{url}
@@ -25,9 +25,9 @@
 
 \title{
 %\vspace*{-2cm} \includegraphics[width=16cm]{header.png}
-\includegraphics[width=6cm]{figures/stuttgart-vector.pdf}\hfill{\includegraphics[width=3cm]{figures/rss_logo.pdf}}
+\includegraphics[width=5cm]{figures/stuttgart-vector.pdf}\hfill{\includegraphics[width=2.5cm]{figures/rss_logo.pdf}}
 \quad \\ [0.5cm]
-{\large \textit{Student Report (Bachelor Softwaretechnik):}} \\ [1mm]
+{\large \textit{Fachstudie (Bachelor Softwaretechnik):}} \\ [1mm]
 {\Large Evaluating Open-source Tool Stacks for Application Performance Diagnostics}
 }
 
@@ -42,14 +42,14 @@
 
 
 \subsection*{Background and Motivation}
-Big server architectures with distributed instances are very common. To monitor such architectures and trigger alert in case of failure or heave workload, powerful control tools for distributed systems are needed. These tools can be used to detect problems in systems e.g. RAM, CPU or bandwidth and response time. Some of these tools are very modular. While many tools only serve one purpose and need to connect to other tools to provide all features that are needed(e.g., data collection, data visualisation). On the other hand some tools offer a complete package using the same technology.
+Big server architectures with distributed instances are very common. To monitor such architectures and trigger alerts in case of failure or heavy workload, powerful control tools for distributed systems are needed. These tools can be used to detect problems in systems, e.g., RAM, CPU, bandwidth and response time. Some of these tools are very modular, which only serve one purpose and need to connect to other tools to provide all features that are needed( e.g., data collection, data visualization). On the other hand some tools offer a complete package using the same technology.
 This work aims to evaluate different tools on the market and to compare them to illustrate their features and disadvantages. 
-Not considered in this work are pure APM tools for single server architectures \cite{ahmed2016studying} \cite{Heger2017} .
+Not considered in this work are pure APM tools for single server architectures \cite{ahmed2016studying,Heger2017} .
 
 \subsection*{Goals}
 This work lists and discusses different open-source monitoring and alerting tools. The goal is to illustrate the different architectures, features, and technologies of the tools to make it easier for the reader to decide which tool are the best for the reader.
-Some applications that will be compared are InfluxDB \cite{InfluxDB} combined with Kapacitor, Prometheus \cite{Prometheus}  and ELK \cite{ELK} . As a first step, more tools will be added to the list. Required for these tools is, that they are able to monitor microservices and have options to send alerts to the users. Furthermore, an interactive visualization of the collected data is necessary.
-Secondly, the features of these tools will be collected and compared. Eventually the evaluated tools will be deployed and tested in a real environment, using application container technologies i.e., Docker and Rubernetes 
+Some applications that will be compared are InfluxDB combined with Kapacitor \cite{InfluxDB}, Prometheus \cite{Prometheus}  and ELK \cite{ELK} . As a first step, more tools will be added to the list. Required for these tools is, that they are able to monitor microservices and have options to send alerts to the users. Furthermore, an interactive visualization of the collected data is necessary.
+Secondly, the features of these tools will be collected and compared. Eventually the evaluated tools will be deployed and tested in a real environment, using application container technologies i.e., Docker and Kubernetes. 
 
 
 \begin{scriptsize}
